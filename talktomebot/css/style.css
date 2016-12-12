@@ -1,0 +1,53 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    width: 270px;
+    height: 400px;
+    box-shadow: 0px 0px 1px 1px grey;
+    border-radius: 4px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-block {
+    height: 100%;
+    width: 100%;
+}
+
+.card-block h4 {
+    margin-top: 5px;
+    margin-left: 4%;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+.card-block p {
+    height: 160px;
+    overflow: hidden;
+    margin-left: 4%;
+    margin-top: -30px;;
+    max-height: 145px;
+    color: gray;
+}
+
+.card-block a {
+    margin-left: 4%;
+    padding: 10px 30px;
+    background-color: antiquewhite;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    transition: background-color 1s;
+}
+
+.card-block a:hover {
+    background-color:burlywood;
+    transition: background-color 1s;
+}
