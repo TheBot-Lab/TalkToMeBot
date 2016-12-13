@@ -1,5 +1,4 @@
-# Talk-to-Me
-A chat bot project
+# Talk-to-Me Chat Bot Project
 A website that features at least six chat bots, but there could be more. Each bot will have a different design and personality.
 
 The purpose of this project is the learn more about chat bots and the variety of places we can use them.
