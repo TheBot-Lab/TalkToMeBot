@@ -7,10 +7,10 @@ gulp.task('eslint', function(){
     exec('eslint js/myJscript.js', function(err, data){
         
         if(err) {
-          fs.writeFile('output.txt', err, 'utf8');    
+          fs.writeFile('logs.txt', err, 'utf8');    
         }
         
-        fs.writeFile('output.txt', data, 'utf8');    
+        fs.writeFile('logs.txt', data, 'utf8');    
     });
 });
 
@@ -24,9 +24,3 @@ gulp.task('watch', function(){
     gulp.watch('scss/*.scss', ['sass']);
     gulp.watch('js/myJscript.js', ['eslint']);
 });
-
-/*
-gulp.task('watch', function() {
-    gulp.watch('js/myJscript.js', ['eslint']);
-});
-*/

@@ -1,4 +1,4 @@
-This part of the documentation was created using/coping the
+This part of the documentation was created using/coping (and editing, making changes to) the 
 
 [contribution guide of FCC:](https://github.com/FreeCodeCamp/FreeCodeCamp/blob/staging/CONTRIBUTING.md)
 
@@ -7,15 +7,16 @@ This part of the documentation was created using/coping the
 
 ### Setting up Your system 
  
- - Clone the Cloud9 workspace
- - Use the Cloud9 workspace
+ [creating a Cloud9 workspace ](https://docs.c9.io/docs/create-a-workspace)
+ 
 
 ### Forking the talktomebot
 
 <ol>
- <li>Go to the top level talktomebot repository: https://github.com/ale-cia/talktomebot</li>
- <li>Click the "Fork" Button in the upper right hand corner of the interface [(More Details Here)](https://help.github.com/articles/fork-a-repo/)</li>
- <li>After the repository has been forked, you will be taken to your copy of the talktomebot repo at yourUsername/talktomebot</li>
+ <li>Go to the top level talktomebot repository: <strong>https://github.com/ale-cia/talktomebot</strong></li>
+ <li>Click the "Fork" Button in the upper right hand corner of the interface <a href="https://help.github.com/articles/fork-a-repo">More Details Here</a>
+</li>
+ <li>After the repository has been forked, you will be taken to your copy of the talktomebot repo at <strong>yourUsername/talktomebot</strong></li>
 </ol>
 
 ### Cloning Your Fork
@@ -33,13 +34,13 @@ $ git clone https://github.com/yourUsername/talktomebot.git
 
 This will download the entire talktomebot repo to your projects directory.
 
-#### Setup Your Upstream
+#### Setup Your Upstream *
 
 1. Change directory to the new talktomebot directory (`cd talktomebot`)
-# 2. Add a remote to the official talktomebot repo: (I don't now if this is right, ask alecia)
+2. Add a remote to the official talktomebot repo:
 
 ```shell
-$ git remote add upstream https://github.com/FreeCodeCamp/FreeCodeCamp.git
+$ git remote add upstream https://github.com/ale-cia/talktomebot.git
 ```
 
 Congratulations, you now have a local copy of the talktomebot repo!
@@ -58,7 +59,7 @@ Do this prior to every time you create a branch for a PR:
   > ```shell
   > $ git status
   > On branch development
-  > Your branch is up-to-date with 'origin/staging'.
+  > Your branch is up-to-date with 'origin/development'.
   > ```
 
   > If your aren't on `development`, resolve outstanding files / commits and checkout the `development` branch
@@ -88,7 +89,7 @@ Do this prior to every time you create a branch for a PR:
 Before you start working, you will need to create a separate branch specific to the issue / feature you're working on. You will push
 your work to this branch.
 
-#### Naming Your Branch // this is changed for our project
+#### Naming Your Branch 
 
 Name the branch something like `xxx-programmername`  where `xxx` is a short description of the changes or feature you are 
 attempting to add. For example `fix-email-login-alecia` would be a branch where you fix something specific to email login.
@@ -109,21 +110,38 @@ $ git push origin [name_of_your_new_branch]
 
 ##### If you need more help with branching, take a look at _[this](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)_.
 
-### Setup Linting // we have a setup for the project
-
 
 ### Setup talktomebot
-Once you have FreeCodeCamp cloned, before you start the application, you first need to install all of the dependencies:
+
+Once you have talktomebot cloned, before you start the application, you first need to install all of the dependencies:
+
+```bash
+# Install Gulp globally
+npm install -g gulp
+```
 
 ```bash
 # Install NPM dependencies
 npm install
 
-# Install Gulp globally
-npm install -g gulp
+```
+
+To run eslint and sass pre-processor:
+
+```bash
+gulp watch
+```
+
+To run the server:
+```bash
+npm start
+```
+
+To visit the page:
 
 ```
-### Only one branch and only one change per commit
+https://talk-to-me-bot-<c9username>.c9users.io
+```
 
 ### Creating A Pull Request
 
@@ -145,12 +163,12 @@ fork and re-fork.
 
 #### Methods
 
-There are two methods of creating a pull request for talktomebot:
+The method of creating a pull request for talktomebot:
 
--   Editing files on a local clone (recommended)
+-   Editing files on a local clone 
 
 
-##### Editing via your Local Fork _(Recommended)_
+##### Editing via your Local Fork 
 
 This is the recommended method. Read about [How to Setup and Maintain a Local
 Instance of talktomebot](#maintaining-your-fork).
@@ -177,9 +195,7 @@ nothing to commit, working directory clean
 
 4.  Check your `git status` to see unstaged files.
 
-5.  Add your edited files: `git add path/to/filename.ext` You can also do: `git
-    add .` to add all unstaged files. Take care, though, because you can
-    accidentally add files you don't want added. Review your `git status` first.
+5.  Add your edited files: `git add path/to/filename.ext`. Review your `git status` first.
 
 6.  Commit your edits: `git commit -m "Brief Description of Commit"`. Do not add the issue number in the commit message.
 
@@ -203,8 +219,7 @@ nothing to commit, working directory clean
 
     -   **Do not add the issue number in the PR title or commit message.**
 
-    -   Examples: `Add Test Cases to Bonfire Drop It` `Correct typo in Waypoint
-        Size Your Images`
+    -   Examples: `Add Test Cases to Chat bot` `Correct typo in function <name>`
 
 5.  In the body of your PR include a more detailed summary of the changes you
     made and why.
@@ -219,19 +234,8 @@ nothing to commit, working directory clean
 
 ### How We Review and Merge Pull Requests
 
-Free Code Camp has a team of volunteer Issue Moderators. These Issue Moderators routinely go through open pull requests in a process called [Quality Assurance](https://en.wikipedia.org/wiki/Quality_assurance) (QA).
+Before the pull request we will have a code review session in slack
 
-1. If an Issue Moderator QA's a pull request and confirms that the new code does what it is supposed without seeming to introduce any new bugs, they will comment "LGTM" which means "Looks good to me."
-
-2. Another Issue Moderator will QA the same pull request. Once they have also confirmed that the new code does what it is supposed to without seeming to introduce any new bugs, they will merge the pull request.
-
-
-### How We Close Stale Issues
-
-We will close any issues or pull requests that have been inactive for more than 15 days, except those that match the following criteria:
-- bugs that are confirmed
-- pull requests that are waiting on other pull requests to be merged
-- features that are a part of a GitHub project
 
 ### Next Steps
 
@@ -259,65 +263,77 @@ overwrite your old commit: `git push --force`
 
 Be sure to post in the PR conversation that you have made the requested changes.
 
-### Other resources
-
--   [Searching for Your Issue on
-    GitHub](http://forum.freecodecamp.com/t/searching-for-existing-issues/19139)
-
--   [Creating a New GitHub
-    Issue](http://forum.freecodecamp.com/t/creating-a-new-github-issue/18392)
-
--   [Select Issues for Contributing Using
-    Labels](http://forum.freecodecamp.com/t/free-code-camp-issue-labels/19556)
-
--   [How to clone the FreeCodeCamp website on a Windows
-    pc](http://forum.freecodecamp.com/t/how-to-clone-and-setup-the-free-code-camp-website-on-a-windows-pc/19366)
-
--   [How to log in to your local FCC site - using
-    GitHub](http://forum.freecodecamp.com/t/how-to-log-in-to-your-local-instance-of-free-code-camp/19552)
-
--   [Writing great git commit
-    messages](http://forum.freecodecamp.com/t/writing-good-git-commit-messages/13210)
-
--   [Contributor Chat Support - For the FCC Repositories, and running a local
-    instance](https://gitter.im/FreeCodeCamp/Contributors)
-
-
-
-
 
 *******************************
-https://github.com/agis-/git-style-guide#branches
 
 
-# we need test and testers (QA)
-# ask alecia about upstream setting
+### Workflow
 
-code : vanilla javascript
+The project uses:
 
-git branch : [mm-dd-yy]-[feature-description] // this is not going to work, because ¿what date?
+ - [airbnb styleguide](https://github.com/airbnb/javascript)
 
-12-19-16-Add-bootstrap-cards
+ - [vanilla javascript](http://vanilla-js.com/)
 
-sass 
+ - [sass](http://www.sassshop.com/)
+
+
+
+### Workflow
+
+ - All the code must comply with the [airbnb styleguide](https://github.com/airbnb/javascript)
+ - The code must have  descriptive [comments](https://github.com/airbnb/javascript#comments) 
+ - The code must have  a step by step  description (pseudocode) for the code review session
+ - Before the pull request the code has to pass a code review session 
+ - If you are having problems with your code
+ 
+
+#### All the code must comply with the airbnb style guide
+
+ - Run eslint 
+
+```shell
+gulp watch
+```
+<ol>
+ <li>Make changes to the code and save</li>
+ <li>Check the output of eslint in the file logs.txt</li> 
+ <li>Correct the errors and warnings</li>
+ <li>Make a copy of the content of the file logs.txt for the code review session</li> 
+ <li>Delete the content of logs.txt</li>
+</ol>
+
+#### The code must have  descriptive comments
+ 
+  Follow the style guide [comments section](https://github.com/airbnb/javascript#comments) 
+  
+#### The code must have  a step by step  description (pseudocode) 
+  
+  This pseudocode will be used in the  code review session
+  
+#### Before the pull request the code has to pass a code review 
+  
+  - Post in the slack channel **auto-bots-code-review** an snippet  with this format:
+    -  Title :"Code review session for <branch-name>"
+    -  Body: A multiline comment with the content of the ```logs.txt``` file
+    -  Body: A multiline comment with the pseudocode 
+    -  Body: The code
+  
+  - We will set a day for a review session
+  
+  - In the code review session you will explain how the code works
+  - If the code pass this review you will have to make a **pull request**
+  
+
+#### If you are having problems with your code:
+   -  Post in the slack channel **auto-bots-code-review** an snippet  with this format:
+   -  Title :"Help with <branch-name>"
+   -  Body: A multiline comment with the content of the ```logs.txt``` file
+   -  Body: A multiline comment witn the pseudocode 
+   -  Body: The code  
+  
+
 ****************************
-
-
-The idea of the project is use:
-
-vanilla javascript: http://vanilla-js.com/
-
-sass: http://www.sassshop.com/
-
-to start the server run:
-
-$ npm start
-
-to visit the page:
-
-https://talk-to-me-bot-<c9username>.c9users.io
-
-to run sass and eslint
-
-$ gulp watch
-
+* http://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository
+* https://2buntu.com/articles/1459/keeping-your-forked-repo-synced-with-the-upstream-source/
+* *  we need test and testers (QA)
