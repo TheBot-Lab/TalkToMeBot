@@ -86,8 +86,7 @@ Do this prior to every time you create a branch for a PR:
 
 ### Create A Branch
 
-Before you start working, you will need to create a separate branch specific to the issue / feature you're working on. You will push
-your work to this branch.
+Before you start working, you will need to create a separate branch specific to the issue / feature you're working on. You will push your work to this branch.
 
 #### Naming Your Branch 
 
@@ -155,9 +154,7 @@ accepted by talktomebot proper.
 
 #### Important: ALWAYS EDIT ON A BRANCH
 
-Take away only one thing from this document, it should be this: Never, **EVER**
-make edits to the `development` branch. ALWAYS make a new branch BEFORE you edit
-files. This is critical, because if your PR is not accepted, your copy of
+If you take only take away one thing from this document, it should be this: Never, **EVER** make edits to the `development` branch. ALWAYS make a new branch BEFORE you edit files. This is critical, because if your PR is not accepted, your copy of
 staging will be forever sullied and the only way to fix it is to delete your
 fork and re-fork.
 
@@ -184,18 +181,17 @@ Your branch is up-to-date with 'origin/development'.
 nothing to commit, working directory clean
 ```
 
-1.  If you are not on development or your working directory is not clean, resolve
-    any outstanding files/commits and checkout development `git checkout development`
+1.  If you are not on development or your working directory is not clean, resolve any outstanding files/commits and checkout development `git checkout development`
 
 2.  Create a branch off of `development` with git: `git checkout -B
     branch/name-here` **Note:** Branch naming is important. Use a name like
     `short-fix-description-programmername` or `short-feature-description-programmername`.
 
-3.  Edit your file(s) locally with the editor of your choice
+3.  Edit your file(s) locally with the editor of your choice.
 
 4.  Check your `git status` to see unstaged files.
 
-5.  Add your edited files: `git add path/to/filename.ext`. Review your `git status` first.
+5.  Review your `git status` first. Add your edited files: `git add path/to/filename.ext`. 
 
 6.  Commit your edits: `git commit -m "Brief Description of Commit"`. Do not add the issue number in the commit message.
 
@@ -209,13 +205,11 @@ nothing to commit, working directory clean
 1.  Once the edits have been committed, you will be prompted to create a pull
     request on your fork's GitHub Page.
 
-2.  By default, all pull requests should be against the talktomebot  repo, `development`
-    branch.
+2.  By default, all pull requests should be against the talktomebot repo, `development` branch.
 
-3.  Submit a pull  request    from your branch to talktomebot `development` branch.
+3.  Submit a pull request from your branch to talktomebot `development` branch.
 
-4.  The title (also called the subject) of your PR should be descriptive of your
-    changes and succinctly indicates what is being fixed.
+4.  The title (also called the subject) of your PR should be descriptive of your changes and succinctly indicate what is being fixed.
 
     -   **Do not add the issue number in the PR title or commit message.**
 
@@ -225,16 +219,14 @@ nothing to commit, working directory clean
     made and why.
 
     -   If the PR is meant to fix an existing bug/issue, then, at the end of
-        your PR's description, append the keyword `closes` and #xxxx (where xxxx
-        is the issue number). Example: `closes #1337`. This tells GitHub to
-        close the existing issue, if the PR is merged.
+        your PR's description, append the keyword `closes` and #xxxx (where xxxx is the issue number). Example: `closes #1337`. This tells GitHub to close the existing issue, if the PR is merged.
 
 6.  Indicate if you have tested on a local copy of the site or not.
 
 
 ### How We Review and Merge Pull Requests
 
-Before the pull request we will have a code review session in slack
+Before the pull request we will have a code review session in Slack.
 
 
 ### Next Steps
@@ -249,12 +241,10 @@ delete the local copy of the branch with: `git branch -D branch/to-delete-name`
 
 #### If your PR is rejected
 
-Don't despair! You should receive solid feedback from the Issue Moderators as to
-why it was rejected and what changes are needed.
+Don't despair! You should receive solid feedback from the Issue Moderators as to why it was rejected and what changes are needed.
 
 Many Pull Requests, especially first Pull Requests, require correction or
-updating. If you have used the GitHub interface to create your PR, you will need
-to close your PR, create a new branch, and re-submit.
+updating. If you have used the GitHub interface to create your PR, you will need to close your PR, create a new branch, and re-submit.
 
 If you have a local copy of the repo, you can make the requested changes and
 amend your commit with: `git commit --amend` This will update your existing
@@ -282,10 +272,10 @@ Be sure to post in the PR conversation that you have made the requested changes.
 ### Workflow
 
  - All the code must comply with the [airbnb styleguide](https://github.com/airbnb/javascript)
- - The code must have  descriptive [comments](https://github.com/airbnb/javascript#comments) 
- - The code must have  a step by step  description (pseudocode) for the code review session
- - Before the pull request the code has to pass a code review session 
- - If you are having problems with your code
+ - The code must have descriptive [comments](https://github.com/airbnb/javascript#comments) 
+ - The code must have a step by step description (pseudocode) for the code review session
+ - Before the pull request, the code has to pass a code review session 
+ - If you are having problems with your code let us know in #auto-bots-code-review
  
 
 #### All the code must comply with the airbnb style guide
@@ -313,7 +303,7 @@ gulp watch
   
 #### Before the pull request the code has to pass a code review 
   
-  - Post in the slack channel **auto-bots-code-review** an snippet  with this format:
+  - Post in the slack channel **auto-bots-code-review** a snippet with this format:
     -  Title :"Code review session for ```<branch-name>```"
     -  Body: A multiline comment with the content of the ```logs.txt``` file
     -  Body: A multiline comment with the pseudocode 
@@ -326,7 +316,7 @@ gulp watch
   
 
 #### If you are having problems with your code:
-   -  Post in the slack channel **auto-bots-code-review** an snippet  with this format:
+   -  Post in the Slack channel **auto-bots-code-review** a snippet with this format:
    -  Title :"Help with ```<branch-name>```"
    -  Body: A multiline comment with the content of the ```logs.txt``` file
    -  Body: A multiline comment witn the pseudocode 
