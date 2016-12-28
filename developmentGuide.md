@@ -267,15 +267,15 @@ Be sure to post in the PR conversation that you have made the requested changes.
 *******************************
 
 
-### Workflow
-
-The project uses:
-
- - [airbnb styleguide](https://github.com/airbnb/javascript)
+### The project tools:
 
  - [vanilla javascript](http://vanilla-js.com/)
-
  - [sass](http://www.sassshop.com/)
+ - [eslint](http://eslint.org/)
+ - [gulp](http://gulpjs.com/)
+ - [npm](https://www.npmjs.com/)
+ - [node.js](https://nodejs.org)
+ - [Express](https://expressjs.com/)
 
 
 
