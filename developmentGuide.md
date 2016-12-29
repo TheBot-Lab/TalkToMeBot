@@ -1,4 +1,4 @@
-This part of the documentation was created using/coping (and editing, making changes to) the 
+This part of the documentation was created using/copying (and editing, making changes to) the 
 
 [contribution guide of FCC:](https://github.com/FreeCodeCamp/FreeCodeCamp/blob/staging/CONTRIBUTING.md)
 
@@ -154,7 +154,7 @@ accepted by talktomebot proper.
 
 #### Important: ALWAYS EDIT ON A BRANCH
 
-If you take only take away one thing from this document, it should be this: Never, **EVER** make edits to the `development` branch. ALWAYS make a new branch BEFORE you edit files. This is critical, because if your PR is not accepted, your copy of
+If you only take away one thing from this document, it should be this: Never, **EVER** make edits to the `development` branch. ALWAYS make a new branch BEFORE you edit files. This is critical, because if your PR is not accepted, your copy of
 staging will be forever sullied and the only way to fix it is to delete your
 fork and re-fork.
 
