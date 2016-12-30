@@ -7,9 +7,20 @@ This part of the documentation was created using/coping (and editing, making cha
 
 ### Setting up Your system 
  
- [creating a Cloud9 workspace ](https://docs.c9.io/docs/create-a-workspace)
+ [Video from Cloud9 documentation: creating a Cloud9 workspace ](https://docs.c9.io/docs/create-a-workspace)
  
-
+ 
+  - Create a new workspace:
+ 
+ <img src="https://dl.dropboxusercontent.com/s/mptoany2vjiwc7m/newWorkspace.png?dl=0" />
+ 
+ 
+  - We recommend for the workspace
+    - Workspace name: talktomebot 
+    - Choose a template: HTML5
+    
+ <img src="https://dl.dropboxusercontent.com/s/ol77u69ts367bme/nameAndTemplate.png?dl=0" />
+ 
 ### Forking the talktomebot
 
 <ol>
