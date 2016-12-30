@@ -303,7 +303,7 @@ gulp watch
   
 #### Before the pull request the code has to pass a code review 
   
-  - Post in the slack channel **auto-bots-code-review** a snippet with this format:
+  - Post in the Slack channel **auto-bots-code-review** a snippet with this format:
     -  Title :"Code review session for ```<branch-name>```"
     -  Body: A multiline comment with the content of the ```logs.txt``` file
     -  Body: A multiline comment with the pseudocode 
