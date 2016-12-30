@@ -148,10 +148,23 @@ npm start
 ```
 
 To visit the page:
+ 
+ - Go to "window" and click  "share":
+ 
+  <img src="https://dl.dropboxusercontent.com/s/3m3xx5021jrvp8r/share.png?dl=0" />
+ 
+ - Copy the URL (Application):
+  
+ <img src="https://dl.dropboxusercontent.com/s/j94whzrcduq0aob/url.png?dl=0" />
+
+
+ - Paste the URL into a Browser Address Bar. In this example the URL is:
 
 ```
-https://talk-to-me-bot-<c9username>.c9users.io
+https://talktomebot-erretres.c9users.io
 ```
+
+ 
 
 ### Creating A Pull Request
 
