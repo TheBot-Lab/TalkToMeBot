@@ -1,4 +1,4 @@
-This part of the documentation was created using/coping (and editing, making changes to) the 
+This part of the documentation was created using/copying (and editing, making changes to) the 
 
 [contribution guide of FCC:](https://github.com/FreeCodeCamp/FreeCodeCamp/blob/staging/CONTRIBUTING.md)
 
