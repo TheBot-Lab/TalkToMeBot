@@ -295,7 +295,7 @@ Be sure to post in the PR conversation that you have made the requested changes.
 
 ### Workflow
  
- /***Changed auto-bots-code-review to code-review***/
+ <!--Changed auto-bots-code-review to code-review*-->
  
  - All the code must comply with the [airbnb styleguide](https://github.com/airbnb/javascript)
  - The code must have descriptive [comments](https://github.com/airbnb/javascript#comments) 
@@ -329,7 +329,7 @@ gulp watch
   
 #### Before the pull request the code has to pass a code review 
   
-   /***Changed auto-bots-code-review to code-review***/
+   <!--Changed auto-bots-code-review to code-review-->
 
   - Post in the slack channel **code-review** a snippet with this format:
     -  Title :"Code review session for ```<branch-name>```"
@@ -343,7 +343,7 @@ gulp watch
   - If the code pass this review you will have to make a **pull request**
   
 
- /***Changed auto-bots-code-review to code-review***/
+   <!--Changed auto-bots-code-review to code-review-->
 
 #### If you are having problems with your code:
    -  Post in the Slack channel **code-review** a snippet with this format:
