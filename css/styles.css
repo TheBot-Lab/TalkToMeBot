@@ -1,16 +1,16 @@
 .bg-color {
-	background-color: black;
+	background-color: #000;
 }
 
 
 .landing-page {
 	height: 670px;
-    background-color: black;
+    background-color: #000;
 }
 
 .friend {
 	font-size: 20px;
-	color: white;
+	color: #dfdddd;
 }
 
 .bot{
