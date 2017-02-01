@@ -1,0 +1,23 @@
+.landing-page{
+	height: 670px;
+    background-color: black;
+}
+.bot{
+	margin-left: 60px;
+    margin-top: 80px;
+    padding-bottom: 60px;
+}
+.text{
+	font-size:  55px;
+	color:#666666;
+    font-family: 'Muli', sans-serif;	padding-top: 50px;
+	
+}
+.update{
+	font-size: 55px;
+	color:#665;
+	font-family: 'Muli', sans-serif;
+}
+#ending-text {
+	padding-top: 30px;
+}
