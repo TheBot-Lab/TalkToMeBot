@@ -1,7 +1,18 @@
-.landing-page{
+.bg-color {
+	background-color: black;
+}
+
+
+.landing-page {
 	height: 670px;
     background-color: black;
 }
+
+.friend {
+	font-size: 20px;
+	color: white;
+}
+
 .bot{
 	margin-left: 60px;
     margin-top: 80px;
@@ -18,6 +29,7 @@
 	color:#665;
 	font-family: 'Muli', sans-serif;
 }
+
 #ending-text {
 	padding-top: 30px;
 }
