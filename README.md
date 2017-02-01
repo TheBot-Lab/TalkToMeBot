@@ -4,4 +4,4 @@ The purpose of this project is the learn more about chat bots, build something f
 
 @kornil from the Red-Pandas designed the fun robot icons for the project. Check out his repo here: https://github.com/Kornil/Red-Panda-FCC-Favicon
 
-Cohort info: https://tropicalchancer.github.io/projectus/
+For more info about the cohorts: https://tropicalchancer.github.io/projectus/
