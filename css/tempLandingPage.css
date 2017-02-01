@@ -10,13 +10,13 @@
 .text{
 	font-size:  55px;
 	color:#666666;
-    font-family: 'Nunito', sans-serif;	padding-top: 50px;
+    font-family: 'Muli', sans-serif;	padding-top: 50px;
 	
 }
 .update{
 	font-size: 55px;
-	color:#666666;
-	font-family: 'Orbitron', sans-serif;
+	color:#665;
+	font-family: 'Muli', sans-serif;
 }
 #ending-text {
 	padding-top: 30px;
