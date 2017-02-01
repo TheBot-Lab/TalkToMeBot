@@ -1,169 +1,23 @@
-.container {
-    height: auto;
-    width: 90vw;
-    margin: 0 auto;
+.landing-page{
+	height: 670px;
+    background-color: black;
 }
-
-hr {
-    border-bottom: 1px solid darkgray;
-    opacity: .5;
+.bot{
+	margin-left: 60px;
+    margin-top: 80px;
+    padding-bottom: 60px;
 }
-
-/*========== NAV Bar ============*/
-
-nav {
-    text-align: right;
-    margin-top: 6vh;
-    border: 1px solid transparent;
+.text{
+	font-size:  55px;
+	color:#666666;
+    font-family: 'Nunito', sans-serif;	padding-top: 50px;
+	
 }
-
-.nav-container {
-    max-width: 50vw;
-    float: right;
+.update{
+	font-size: 55px;
+	color:#666666;
+	font-family: 'Orbitron', sans-serif;
 }
-
-nav li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 7vw;;
-}
-
-nav li a {
-    text-decoration: none;
-    color: rgb(22, 217, 224);
-}
-
-/*========== Page Title and Subtitles ========*/
-
-.h-title {
-    text-align: center;
-    font-weight: normal;
-    color: gray;
-    clear: both;
-    margin-bottom: 12vh;
-    padding-top: 2vh;
-}
-
-h1 {
-    margin-top: 5vh;
-    font-size: 3em;
-    font-weight: normal;
-}
-
-.h-title h3 {
-    margin-top: 10vh;
-    margin-bottom: 0vh;
-}
-
-/*========== Main Body Content ========*/
-
-#body-1p {
-    margin: 5vh auto;
-    margin-bottom: -2vh;
-    width: 70vw;
-    color: gray;
-    font-size: 1.5em;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-/*========== About-Section ========= */
-
-.about-section {
-    width: 50vw;
-    margin: 0 auto;
-}
-
-.about-section h4 {
-    text-align: center;
-    font-size: 1.4em;
-    margin-bottom: 11vh;
-    margin-top: 8vh;
-}
-
-.about-section p {
-    color: gray;
-    font-size: 1.4em;
-    margin-bottom: 7vh;
-}
-
-/*========== Footer ===========*/
-
-footer {
-    text-align: center;
-    color: gray;
-}
-
-footer h4 {
-    font-size: 1.4em;
-    font-weight: normal;
-    margin: 0;
-    margin-bottom: 2vh;
-}
-
-footer a {
-    text-decoration: none;
-    color: gray;
-    font-size: 1.4em;
-    padding-bottom: 2vh;
-}
-
-/*========== CARD ==========*/
-
-.card2 {
-    width: 260px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: white;
-    position: relative;
-    transition: all .5s;
-    margin: 5vh 5%;
-    height: 280px;
-}
-
-.card2:hover {
-     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.t-div {
-    height: 100%;
-    transition: all 1s;
-}
-
-.card2 img {
-    width: 100%;
-    position: relative;
-}
-
-.card-button2 {
-    padding: 10px 30px;
-    background-color: bisque;
-    position:absolute;
-    top: 175px;
-    left: 80px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: black;
-    transition: background-color .5s;
-    display: none;
-}
-
-.card-button2:hover {
-    background-color: darksalmon;
-}
-
-.card-block2 p, .card-block2 h4 {
-    position: relative;
-    margin-left: 10px;
-}
-
-.card-block2 h4 {
-    margin-top: 0px;
-}
-
-.card-block2 p {
-    margin-top: -15px;
+#ending-text {
+	padding-top: 30px;
 }
