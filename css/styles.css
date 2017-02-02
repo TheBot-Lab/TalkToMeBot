@@ -26,10 +26,14 @@
 }
 .update{
 	font-size: 55px;
-	color:#1abc9c;
+	color: #1abc9c;
 	font-family: 'Muli', sans-serif;
 }
 
 #ending-text {
 	padding-top: 30px;
+}
+
+.contact {
+	
 }
