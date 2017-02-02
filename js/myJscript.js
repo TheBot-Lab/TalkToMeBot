@@ -12,5 +12,5 @@ $('.card2').hover(function() {
         $( this ).find('.card-button2').fadeOut('slow', function() {
             $( this ).find( '.card-button2' ).stop(true, true);
             $( this ).css('top', '175px');
-        });
+      });
 });
