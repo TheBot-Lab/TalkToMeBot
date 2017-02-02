@@ -34,12 +34,15 @@
 	padding-top: 30px;
 }
 
-a {
-	text-decoration: none;
-}
 
 .footer a {
 	color: #dfdddd;
 	padding-left: 75px;
+	text-decoration: none;
 }
 
+.footer a:link {
+	color: #dfdddd;
+	padding-left: 75px;
+	text-decoration: none;
+}
