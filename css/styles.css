@@ -1,3 +1,8 @@
+body {
+	height: 100%;
+	margin: 0;
+}
+
 .bg-color {
 	background-color: #000;
 }
@@ -13,18 +18,19 @@
 	color: #dfdddd;
 }
 
-.bot{
+.bot {
 	margin-left: 60px;
     margin-top: 80px;
     padding-bottom: 60px;
 }
-.text{
+
+.text {
 	font-size:  55px;
 	color: #1abc9c;
     font-family: 'Muli', sans-serif;	padding-top: 50px;
 	
 }
-.update{
+.update {
 	font-size: 37px;
 	color: #1abc9c;
 	font-family: 'Muli', sans-serif;
@@ -34,15 +40,17 @@
 	padding-top: 30px;
 }
 
+.footer {
+	margin: -150px auto;
+}
 
-.footer a {
+.footer a:hover {
 	color: #dfdddd;
-	padding-left: 75px;
 	text-decoration: none;
 }
 
 .footer a:link {
-	color: #dfdddd;
+	color: #1abc9c;
 	padding-left: 75px;
 	text-decoration: none;
 }
