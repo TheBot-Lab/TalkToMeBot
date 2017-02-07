@@ -7,9 +7,20 @@ This part of the documentation was created using/copying (and editing, making ch
 
 ### Setting up Your system 
  
- [creating a Cloud9 workspace ](https://docs.c9.io/docs/create-a-workspace)
+ [Video from Cloud9 documentation: creating a Cloud9 workspace ](https://docs.c9.io/docs/create-a-workspace)
  
-
+ 
+  - Create a new workspace:
+ 
+ <img src="https://dl.dropboxusercontent.com/s/mptoany2vjiwc7m/newWorkspace.png?dl=0" />
+ 
+ 
+  - We recommend for the workspace
+    - Workspace name: talktomebot 
+    - Choose a template: HTML5
+    
+ <img src="https://dl.dropboxusercontent.com/s/ol77u69ts367bme/nameAndTemplate.png?dl=0" />
+ 
 ### Forking the talktomebot
 
 <ol>
@@ -137,10 +148,23 @@ npm start
 ```
 
 To visit the page:
+ 
+ - Go to "window" and click  "share":
+ 
+  <img src="https://dl.dropboxusercontent.com/s/3m3xx5021jrvp8r/share.png?dl=0" />
+ 
+ - Copy the URL (Application):
+  
+ <img src="https://dl.dropboxusercontent.com/s/j94whzrcduq0aob/url.png?dl=0" />
+
+
+ - Paste the URL into a Browser Address Bar. In this example the URL is:
 
 ```
-https://talk-to-me-bot-<c9username>.c9users.io
+https://talktomebot-erretres.c9users.io
 ```
+
+ 
 
 ### Creating A Pull Request
 
@@ -270,12 +294,14 @@ Be sure to post in the PR conversation that you have made the requested changes.
 
 
 ### Workflow
-
+ 
+ <!--Changed auto-bots-code-review to code-review*-->
+ 
  - All the code must comply with the [airbnb styleguide](https://github.com/airbnb/javascript)
  - The code must have descriptive [comments](https://github.com/airbnb/javascript#comments) 
  - The code must have a step by step description (pseudocode) for the code review session
  - Before the pull request, the code has to pass a code review session 
- - If you are having problems with your code let us know in #auto-bots-code-review
+ - If you are having problems with your code let us know in #code-review
  
 
 #### All the code must comply with the airbnb style guide
@@ -303,7 +329,9 @@ gulp watch
   
 #### Before the pull request the code has to pass a code review 
   
-  - Post in the slack channel **auto-bots-code-review** a snippet with this format:
+   <!--Changed auto-bots-code-review to code-review-->
+
+  - Post in the slack channel **code-review** a snippet with this format:
     -  Title :"Code review session for ```<branch-name>```"
     -  Body: A multiline comment with the content of the ```logs.txt``` file
     -  Body: A multiline comment with the pseudocode 
@@ -315,8 +343,10 @@ gulp watch
   - If the code pass this review you will have to make a **pull request**
   
 
+   <!--Changed auto-bots-code-review to code-review-->
+
 #### If you are having problems with your code:
-   -  Post in the Slack channel **auto-bots-code-review** a snippet with this format:
+   -  Post in the Slack channel **code-review** a snippet with this format:
    -  Title :"Help with ```<branch-name>```"
    -  Body: A multiline comment with the content of the ```logs.txt``` file
    -  Body: A multiline comment witn the pseudocode 
