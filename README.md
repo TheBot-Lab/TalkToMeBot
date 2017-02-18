@@ -1,6 +1,12 @@
 # Talk-to-Me Chat Bot Project
 
-This is the repo for the first chatbot team. The repo for Team Two can be found here: https://github.com/ale-cia/TheBotLab-Team2
+This is the repo for the first chatbot **TalkToMeBot**. 
+
+The repo for **Botivator** can be found here: https://github.com/TheBot-Lab/Botivator
+
+The repo for **Team-3** can be found here: https://github.com/TheBot-Lab/Team-3
+
+
 
 The purpose of this project is the learn more about chat bots, build something fun, and explore the variety of places we can use them. Chingu cross-cohort collaboration is welcomed! Or, if you know of someone outside of the cohorts that may be interested or has experience with chat bots, linguistics or AI, feel free to tell them about this project.
 
