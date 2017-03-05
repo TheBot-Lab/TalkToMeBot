@@ -4,7 +4,7 @@ This is the repo for the first chatbot **TalkToMeBot**.
 
 ##Repos for other bot/chatbot team projects:##
 
-The repo for **Botivator** can be found here: https://github.com/TheBot-Lab/Botivatora motivational bot
+The repo for **Botivator** a motivational bot can be found here: https://github.com/TheBot-Lab/Botivatora motivational bot
 
 The repo for **DocBert** the file manager bot, can be found here: https://github.com/TheBot-Lab/Chingu-BotLab-docBert
 
